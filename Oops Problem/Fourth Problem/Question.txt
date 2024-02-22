@@ -1,0 +1,42 @@
+Write a python code to check if an input string only consists of characters present in another given input string.
+Code will take as input two strings and check if the first input string consists of only characters present in the 
+second input string
+
+if yes, program will print the message "input string is valid" without the quotes followed by the first input 
+string in a separate line.
+
+Otherwise, program will print the message "Input string is not valid without the quotes followed by the 
+first input string in a separate line.
+
+Example:
+If input strings are "how" and "who are you", 
+output will be:
+Input string is valid
+how
+
+Note: All searches/string comparisons should be case insensitive.
+Instructions to write main section of the code:
+
+a. You would require to write the main section completely, hence please follow the below instructions for the same
+b. You would require to write the main program which is inline to the "sample input description section" mentioned below and to read the data in the same sequence.
+
+Input Description
+
+1 Read two input strings one by one
+2. If all the characters in the first input string is present in the second input string, print the message "Input string is valid" without the quotes followed by the first input string in a separate line
+first input string a separate line
+Otherwise print the message "Input string is not valid without the quotes followed by the
+
+Sample Input 1:
+how
+how are you
+Output:
+Input string is valid
+how
+
+Sample Input 2:
+I am good
+Who am I
+Output:
+Input string is not valid
+I am good

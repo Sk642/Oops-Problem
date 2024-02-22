@@ -1,0 +1,109 @@
+Write the code to define a class to create an Employee object with the below attributes:
+
+employee Id
+
+employee Name
+
+role-represents the role of the employee
+
+age in the role-represents the number of years employee has spent in that role promotion eligibility status
+
+Define the method to initialize the first four attributes in the above sequence when an Employee object is created. The value for promotion eligibility status will be initialized to None
+
+Write the code to define a class to create Organization object with below attributes
+
+A list of Employee objects
+
+Details of role-wise age in role to be completed to be eligible for promotion represented as a pair of "role"-"eligibility age in role for promotion values
+
+Define the method in the class to initialize the attributes with values given as argument when creating an Organization object
+
+Define a method in the class to fulfill the requirements specified below.
+
+1. Method will find the eligibility status of all the employees in the organization based on the age in role of the employee and the eligibility age in role for promotion for the role and return the Employee Id and promotion eligibility status as key:value pairs (emp Id:eligibiliy status). Method will also update the promotion eligibility status of employees with the value calculated.
+
+Method will traverse through the employee list of the Organization and check in the details of role-wise age in role to be completed to be eligible for promotion of the organization. If the employee is eligible for a promotion based on that, the promotion eligibility status of the employee is updated, and the employee id and the eligibility status pair is added to the details to be returned
+
+Eligibility status is calculated as below
+
+if the number of years employee has spent in the role the value of the age in role to be completed to be eligible for promotion for that role, status is considered as "eligible"
+
+if the number of years employee has spent in that role > the value of the age in role to be completed to be eligible for promotion for that role, status is considered as "overdue"
+
+otherwise, the number of years to be completed by the employee in the role to be eligible for promotion is calculated and status is considered as "<count of years calculated> years left"
+
+e.g if the number of years employee has spent in the role is 3 and the value of the age in role to be completed to be eligible for promotion for that role is 5, the status will be considered as "2 years left".
+
+Below is a sample of the resultant/to-be-returned dictionary from the function:
+
+{101:overdue, 102:eligible, 103:1 years left, 104:eligible}
+
+Note: All the searches/string comparisons should be case insensitive.
+
+Instructions to write main section ofge code
+
+1. You would require to write the main section completely, hence please follow the below Instructions for the same
+
+2. You would require to write the main program which is inline to the "sample input description section" mentioned below and to read the data in the same sequence.
+
+3. Create the respective objects (Employee and Organization) with the given sequence of arguments to fulfill the _init_ method requirement defined in the respective classes referring to the below instructions.
+
+1. Create a list of Employee objects for the Organization class's attribute. To create the List,
+
+1. first read a number value representing the no. of Employee objects you want to store in the list
+
+2. Create an Employee object after reading the data related to it and add the object to the list of Employee objects to be provided to the Organization object for the employee List attribute. This point repeats for the number of Employee objects (considered in the first line of input) read in point #1 above.
+
+II. Create a list of role wise age in role to be completed to be eligible for promotion represented as a pair of "role"-"eligibility age in role for promotion values for the Organization object to be created. To create the list, read 3 pairs of values for "rale": "eligibility age in role for promotion" and add to the list.
+
+iii Create Organization object by passing the employee List (created above in point #3.1) and the role-wise age in role to be completed to be eligible for promotion list (created in point #3.ii) as the arguments.
+
+4. Call the method defined to find the eligibility status of all the employees in the organization
+
+5. Print the employee le and Eligibility status (ex: eligible or overdue or <number years left) of all the employees returned by the method called in point #4 one by one.
+
+Refer to sampin input output below for mare canty on input and output formats.
+
+1. The first input to be given is the count of Employee objects to be created and added to the employee list which is an attribute of the Organization class.
+
+2. The next set of inputs are the employee Id, employee Name, role and years in role of the Employee for each Employee object taken one after another and is repeated for the number of Employee objects given as input in point#1 above.
+
+3. The next set of inputs refer to the values for 3 "role":"eligibility age in role for promotion
+
+Sample Input (below) description:
+Consider below given sample input and output:
+
+Input:
+4
+101
+Jhon M
+specialist
+6
+102
+Mitul Barua
+Faculty
+4
+103
+Rosy Borah
+Faculty
+3
+104
+Reza
+Generalist
+2
+faculty
+4
+Specialist
+5
+Generalist
+3
+
+
+Output:
+101 overdue
+102 eligible
+103 1 years left
+104 1 years left
+
+
+

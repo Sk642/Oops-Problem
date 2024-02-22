@@ -1,0 +1,100 @@
+Create a class Project with the below attributes: 
+projectid of type Number 
+projectName of type String 
+manHours of type Number 
+technologyList of type List 
+avgProjCost of type Number
+
+Attribute description:
+projectid represents the Project Id, projName represents the name of the project manHours represents 
+the total man hours of the project for completion technologyList represents the a list of technologies(strings)
+used in the project and avgProjCost represents the average project cost of the project.
+
+Create the_init_method which takes all parameters except the average project cost in the above sequence. 
+The method should set the value of attributes with parameter values, received.
+Initialize the variable avgProjCost to 0 in this constructor
+
+Create a method inside the class with the name calculateProjCost This method takes a numeric value as argument, 
+which is the rate per man hour. This function calculate the project cost(refer formula below) based on man Hours 
+and rate per man hour Return the calculated value
+
+Formula for project calculation:
+
+project cost= (total number of man Hours of the project)* (rate per man hour)
+
+Ex if the man hours of the project is 100 and the given rate per man hour is Rs 200, then the project 
+cost should be Rs 20000 and return the same
+#######################################################################################################
+Create another class Organization with the below attributes
+
+orgName of type String 
+ProjList of type List having Project objects
+
+Create the_init_method which takes all parameters in the above sequence. The method should set the value of attributes 
+with parameter values inside the constructor
+
+Create a method inside the class with the name projAvgCostByTechnology
+The method takes two parameters First parameter is the Project id and the second parameter is the rate per man hour. 
+The method should find the respective project, whose Project id is given as in the argument and calculate the average 
+project cost price(refer the formula below for average cost price calculation) of the project and initialize this 
+calculated value to the average project Cost(avgProjCost) attribute of the respective project object. Finally return the 
+Project object 
+Average project cost price = (project cost price returned by calculateProjCost function of the Project)/(total number of 
+technologies in the project)
+
+Note:
+Use the method calculateProject defined in the project class to calculate the cost of the project.
+
+If the project with given Project id is not found, then the method returns None. 
+For more clarity on the above boundary validations, please refer the default main function.
+
+You can use/refer the below given sample input and output to verify your solution using Custom Input option in 
+Hackerrank.
+
+Sample Input description:
+
+1. The 1st input taken in the main section is the number of Project objects to be added to the list of Projects 
+2. The next three lines of inputs are the project id, project name total man hours of the corresponding project 
+3.The next line of input represents the number of technologies in the project(Mentioned in the second line of input)
+
+The next line is the technology name and these input lines are repeated as per the technologies count mentioned in the
+ previous line (number of technologies in the respective project)
+4 .The above steps (2 and 3) repeated for number of objects given in the first line of input(Point #1)
+
+
+Input:
+4
+1
+Banking
+100
+2
+C
+c++
+2
+Finance
+200
+3
+C
+C++
+Java
+3
+Pharma
+500
+4
+C
+C++
+Java
+Python
+4
+Transport
+150
+1
+Dot Net
+3
+200
+
+
+
+Output:
+
+3 Pharma ['C', 'C++', 'Java', 'Python'] 500 25000.0

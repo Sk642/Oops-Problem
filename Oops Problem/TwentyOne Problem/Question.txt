@@ -1,0 +1,79 @@
+Create a class painting with below attributes: 
+
+paintingID: string type
+
+painterName: string type
+
+paintingprice: int type
+
+paintingtype: string type
+
+Create a constructor (_init_method) which takes all above attributes in the same sequence.
+
+Method will set the values passed as argument to the attributes of painting attribute created. 
+
+Create a class ShowRoom with attribute as list of paintings obtained from main function. 
+
+paintinglist: of type List of painting objects
+
+Define two function inside ShowRoom class
+
+getTotalPaintingPrice: it takes a string representing the painting type as argument and returns the total painting price of the paintings of the given type from the paintingList of ShowRoom. If no painting within given type is present in the list then the method returns "No painting found"
+
+getPainterkithaxCountOfPaintings: It finds the name of painter from the paintinglist of ShowRoom who has the highest Count of Painintgs. If more than one painter has highest count of paintings, method returns the name of painter whose name comes first as per alphabetical order(A-Z).
+
+
+
+Input
+4
+101
+Kadamb
+500
+Portrait
+102
+Suman
+3000
+Portrait
+103
+Suman
+3000
+Modern
+104
+Kadamb
+3000
+portrait
+landscape
+
+
+Output:
+Painting not found.
+Kadamb
+
+
+Input
+5
+101
+Raman
+50000
+Portrait
+102
+Kamaal
+30000
+Portrait
+103
+Raman
+25600
+Modern
+104
+Preeti
+31000
+landscape
+105
+Sumiran
+50000
+modern
+modern
+
+Output:
+75600
+Raman

@@ -1,0 +1,123 @@
+Write a python programs as per the below prototype to fulfill the below requirements:
+
+a. Which will to add couple of employee to the organization based on the count
+b. Display the Employee age whose ID is given in the input
+c. Display the count of employees, whose is is older than the given age as input
+
+Prototype:
+
+Define a class Employee with attributes name, id, age ,and gender
+
+Define a class Organisation with attributes to have a
+ name for the organization, 
+ and a list to store list of employees 
+ Provide following methods to the class
+
+1.addEmployee(): This method will takes name id, age and gender of the employee as the input arguments in the order. 
+name id,age and gender, create the employee object and add it to the employee list available with the organisation
+
+2 getEmployeeCount(): This method will return the number of employees that are currently there in the list of
+employees available with the organisation.
+
+3.findEmployeeAge(): This method takes id as an input argument and return the age of the employee if there is an employee having that id in the list otherwise will return -1
+
+4. countEmployees(): This method will take age as an input argument and will return the count of employees in the employee list who are older than the given age.
+
+While defining the above functions for input arguments and output arguments/data, please refer the main program, from which most of the above functions gets called, which gives more clarity
+
+1. After completion of the code, please follow the below Instructions to test your code against your input:
+When you want to test your program by providing customized input please follow the below step Select the check box Test against custom input and input the data as explained in the text area that is populated after selection of the check box
+
+
+
+1. After completion of the code, please follow the below Instructions to test your code against your input: 
+When you want to test your program by providing customized input please follow the below step Select the check box "Test against custom input" and input the data as explained in the text area that is populated after selection of the check box.
+
+a.Provide an integer in the first line of the text area, which represents the numbers of employees to be added to the list available with the organisation object to be created in the main block
+
+b.Provide a string in the second line in the text area, the name of the first employee employee
+
+c.Provide an integer in the third line contains an integer, the id of the employee. 
+d. Provide an integer in the fourth line, the age of the employee.
+
+e.Provide a string in the fifth line contains a string, the gender of the employee.
+
+[Needs to be repeated from steps from b to e for the second employee third employee to be added as per the count value
+taken as first line of the text areal(point#a)] 
+
+f.Provide an integer in the last but one line contains an integer, the id of the employee for whom the age needs to be
+displayed.
+
+g.Provide an integer in the last line contains an integer, the age for which the count of employees who are older than that age is to be returned
+
+Then Click on "Run code to test your code against your customized input provided as above.
+
+Note:
+For more details on "input data entered from stdin in the text area, how this data will be processed/read and for order of the input data please refer the main program, which is provided as part of the solution
+Example1.
+For example if you want to add 2 employees with the below data then
+
+Employee 1         Employes 2
+Name: A
+ID: 1
+Age: 30 
+Gender :M
+                    Name: B
+                    ID:2 
+                    Age :40
+                    Gender: F
+
+
+
+and to display the age of the employee with ID 2
+
+and to get the count of employees older than 30 years,
+
+Then you need to provide the data in the below order in the text area, that will be read by the main program:
+
+2
+'A'
+1
+30
+'M'
+'B'
+2
+40
+'F'
+2
+30
+
+For the above input data the output will be as below,
+2
+40
+1
+'A'
+1
+30
+'M'
+'B'
+2
+40
+'F'
+10
+50
+
+For the above example the output will be,
+2
+-1
+0
+
+In the above output:
+
+2 represents the count of employees,
+
+-1 to represent that employee whose id is 10 not found
+
+and 0 represents the count of employees in the organization having age 50.
+
+2. After completion of the code,please follow the Instructions to test your code against the test cases configured for the evaluation of your code follow the below guidelines
+
+a. Dont select the check box "Test against custom input"
+
+b. Click on the Run code button then main program read the data (in the same order as described above) but from the configured test cases to verify the number of test cases passed for your code.
+

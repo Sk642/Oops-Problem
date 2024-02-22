@@ -1,0 +1,98 @@
+Define a class Account with the below attributes:
+
+cardNumber of type Int
+pin of type int
+balance of type float (represents existing account balance) 
+withdrawalAmount of type float (represents last withdrawal amount)
+accountType of Type String
+
+Define the required method in the Account class which takes all parameters in the above sequence and sets the value of attributes to parameter values while creating an object of the class.
+
+Create a method Inside Account class. This method takes a withdrawlAmount value as argument and if this amount is less than or equal to the existing account balance then the method calculates the new balance and updates the balance. The method also sets/overwrites the withdrawlAmount attribute of Account class with the new withdrawlAmount value.
+
+eg. if the existing account balance is 60 and the given withdrawlAmount (passed as argument) is 10, then the updated balance should be 50 and updated withdrawlAmount would be 10
+
+Define another class ATM with the below attributes: 
+branch name of type String 
+accountList of type List having Account objects
+
+Define the required method in the ATM class which takes all parameters in the above sequence and sets the value of attributes to parameter values while creating an object of the class
+
+Create another method inside the ATM class.
+This method takes the card number as first argument, pin as the second argument and withdrawlAmount as the third argument. This method should calculate the updated balance using the method created in class Account If the card number and pin entered are valid.
+
+If the account with given card number and pin is not found, then the method returns None.
+Note: In Python None means NULL Object, Accordingly it will display the message
+"No account Exists" (without the quotes)
+
+
+Create another method Inside the ATM class.
+
+This method takes an account type as Input and filters all Accounts for the given account type and returns a dictionary of cardNumber as key and balance as value in ascending order of their balance.
+
+Note: All searches should be case Insensitive.
+
+If No account of given account type is found display "No match Found" (without the quotes)
+
+Instructions to write main section of the code:
+
+a. You would require to write the main section completely, hence please follow the below Instructions for the same.
+
+b. You would require to write the main program which is Inline to the "sample Ihput description section" mentioned below and to read the data in the same sequence.
+
+c. Create the respective objects (Account and ATM) with the given sequence of arguments as per the requirements defined in the respective classes referring to the below instructions.
+
+i. Create a list of Account objects. To create the list,
+
+   1. Take a number as input representing the count of Account objects to be created and added to the list.
+
+   2. Create an Account object after reading the data related to it Le. cardNumber, pin, balance, withdrawalAmount, account Type (in this sequence) and add the object to the list of Account objects which will be provided to the ATM object. This point repeats for the number of Account objects (considered in the first line of input, point #c.1.1) to be created.
+
+Refer to sample input-outputs for more clarity.
+
+ii. Create ATM object by passing the list of Account objects (created in point# c.l) as the argument.
+
+d. Next take three Input values one after another representing the card number, pin and withdrawalAmount which will be used to validate the account and withdraw amount from It.
+
+e. Using the values read in point #d, call the required method of the ATM class to withdraw money from the account and update the balance and withdrawalAmount of the account as required. If the withdrawal was successful, display the cardNumber, updated balance and updated withdrawalAmount of the account in a single line separated by space (refer to sample output below). If None was returned from the method display the relevant message as described in method description.
+
+f. Next, read an Input value representing the account type to search/filter with.
+
+g. Using the value read in point #f, call the method of the ATM class to find the card numbe and balance of the accounts of the given account type and display the card Numbers and balances returned in the format specified in sample output below. Note, account records (card number and balance) In output should be printed In the same order as they were taken in input. If no account of given type is found relevant message should be displayed as per method description.
+
+Note: Balance and withdrawalAmount values in outputs should be printed up to one decimal place. Refer to sample output below for clarity.
+
+You may refer to the sample output to have better clarity on the display formats. You can use/refer the below given sample input and output to verify your solution.
+
+Input Format for Custom Testing:
+
+The 1st Input taken in the main section is the number of account objects to be added to the Ist of Accounts.
+
+The next set of inputs are the card number, pin, balance, withdrawal amount and account type for each account taken one after other and is repeated for number of Account objects given in the first line of Input
+
+The next three lines of Input refer to the card number, pin and withdrawalAmount to call the required method of the ATM class to withdraw money from the account.
+
+The last line of input represents the input account type to call the required method of the ATM class to filter all Accounts for the given account type
+
+Sample Input:
+2
+12345
+12
+30.0
+10.0
+salary
+45678
+98
+400.0
+200.0
+salary
+45678
+98
+100.0
+salary
+
+
+Output:
+45678 300.0 100.0
+12345 30.0
+45678 300.0

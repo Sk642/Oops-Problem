@@ -1,0 +1,101 @@
+create a class Professor with the below attributes 
+
+Profid of integer type
+Profname of string type
+subjectDict is of dictonary of the subjects(subject is the key year of experience as it values)
+
+Where,Profid represents professor id, Profname represents professor name
+and subjecdict represents the dictonary with subject name ,number of years of experience 
+as key value pair
+
+Define the __init__ method to initialize the attributes to above sequence
+
+Note: The dictonary is created and filled in main program for each of the professor after reading the professor related data and passed as the third argument to this constructor and this will be initialized to subjectdict
+
+Create a class University with the following methods
+
+Define two methods-getTotalExperience and selectSeniorProfessorBySubject in university class as per the below description
+
+getTotalExperience-method
+
+This method takes two input parameters -the list of professor objects and a number value which represent the professor id .its return the total experience of that professor whose id match with the given professor id
+
+Total experience is to be calculated as the sum of eperience of all the subjects of the respective professor .The experience of each subject can be accessed from the dictnory belonging to the professor object.
+
+if no professor is avaliable with the given id, then return 0
+
+Hint:- The professor list needs to be created and filled in main program after reading each professor related data and passed as the first argument to this constructor and this will be used to traverse the respective professor object to get the subject wise eperience to calculated  the total eperience.
+
+b. Display the total experience (returned by this function) in the main function
+
+
+selectSeniorProfessorBySubject method:
+This method takes two parameters the list of professor objects and a string representing the subject name. the method returns the professor who has the highest eperience in that subject (Assume no professor have same years experience in given subject)
+
+if there is no professor avaliable for a given subject then return None
+
+
+Hint:
+a.Use the same list which is supplied as a argument to the method , getTotalExperience.
+
+b. Display the Professor object(returned by this function) in the main function at last
+
+eg. Output format to display the return value of the above method is as below
+
+1 Shivakkumar {'Maths':10,'Physics':10,'Chemstray':10}
+Where in '1' represent the Professor Id,'Shivakumar' is the Professor Name and {'Maths':10,'Physics':10,'Chemstray':10} represent the dictonary of the subjects and experience as key:value pair of the professor whose is senior in the given Sunjects
+
+Note:
+
+a. You would required to write the main program completely,please follow the below instruction for the same 
+
+b. You main should read the sample input data as mentioned below and create the respective objects and call the methods(getTotalExperience and selectSeniorProfessorBySubject) mentioned above in same order as they appear in the question text from main function.
+
+Refer the comments in the default code editor below which provides more clarity to implement the code 
+
+
+
+Sample Input:
+4
+1
+Shivakumar
+3
+Maths
+10
+Physics
+10
+Chemistry
+10
+2
+Rajesh
+4
+MATHS
+5
+PHYSICS
+5
+CHEMISTRY
+5
+COMPUTERS
+5
+3
+vasudev
+2
+MATHS
+4
+PHYSICS
+4
+4
+Srinivas
+3
+Maths
+8
+Physics
+8
+Chemistry
+8
+3
+maths
+
+Sample Output
+8
+1 Shivakkumar {'Maths':10,'Physics':10,'Chemstray':10}

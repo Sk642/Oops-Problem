@@ -1,0 +1,62 @@
+Write a python code as per the below guidelines which will calculate the percentage and grade of a student based on the percentage of marks.
+
+Define a class Student with attributes roll number (roll), student name(name) and a list which stores the marks scored by the students(marks_list).
+
+Provide following methods to the class
+
+1. calculate_percentage() This method will calculate the percentage of the student on the basis of the marks obtained by him/her and return the percentage value.
+
+Percentage Calculation:
+
+Percentage = Sum of all the marks/Number of subjects
+
+2 find grade():This method will find the grade of the student on the basis of the percentage acquired by the student. The method returns the grade of the student
+
+The criteria for grade calculation:
+
+1. If percentage of marks is greater than or equal to 80, grade is 'A'. 
+2. If percentage of marks is greater than or equal to 60 but less than 80, grade is 'B'
+3. percentage of marks is greater than or equal to 40 but less than 60, grade is 'C'
+4. percentage of marks is less than 40, grade is 'F'.
+
+
+1. Instructions to test your code against your input:
+
+When you want to test your program by providing customized input please follow the below step
+
+Select the check box "Test against custom input" and input the data as explained in the text area that is populated after selection of the check box.
+
+a. Provide an integer in the first line of the text area, which represents the numbers of elements to be added in the input list 
+b. Provide the elements one by one in each line after that
+c. Click on "Run code" to test your code against your customized input provided as above
+
+For example 1, if you want to give a list of 123 as the student numbet and Rahul as the name and 3 subject marks then then in the text area for customized input, provide the input as follows:
+
+123
+Rahul
+3
+80
+70
+80
+
+Note: Third line in the above input represents the number of subjects marks to be entered in the next lines.
+
+Output:
+76
+B
+
+Example2: if you want to give a list of 200 as the student numbet and Asha as the name and 4 subject marks (90,90,80,60) then in the text area for customized input, provide the input as follows:
+
+200
+Asha
+4
+90
+90
+80
+60
+
+Note: Third line in the above input represents the number of subjects marks to be entered in the next lines.
+
+Output:
+80
+A
